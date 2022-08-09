@@ -1,0 +1,186 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+
+    --backgroundUpper: no-repeat url("./assets/sunny.jpg");
+    --colorFont: grey;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 100vh;
+    background-color: #23278D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 80vh;
+    background-color: #000c24;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #011140;
+    ;
+}
+
+.upper-data {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: var(--backgroundUpper);
+    background-size: cover;
+}
+
+.upper-data img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lower-data {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.weather-data {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.location {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+.temp {
+    color: var(--colorFont);
+    text-align: center;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+
+
+.more-info-container {
+    flex: 1;
+    background-color: #2351ad;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.info-block {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.info-block-label {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-block-label img {
+    width: 6vh;
+}
+
+.info-block-label span {
+    color: white;
+    font-size: 0.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info-block-value {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.9em;
+}
+
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+
+
+
+
+}
+
+.search-bar {
+    display: flex;
+    box-shadow: 10px 10px 10px #011140;
+
+    flex: 3 1 auto;
+}
+
+.search-input {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    height: 31px;
+    width: 100%;
+    border: none;
+    font-size: 1em;
+    outline-width: 0;
+    color: black;
+    padding: 5px;
+    padding-left: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+
+.lower-dataTablet {
+    position: relative;
+
+
+
+}
