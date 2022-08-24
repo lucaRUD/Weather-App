@@ -11,7 +11,7 @@ import { WeatherData } from '../models/weather.model';
 })
 export class WeatherService {
 
-  apiKey='8979dabd484b00c39e6b130b3b0f3c1a';
+  apiKey='c23962921705205f624a18420a847ec7';
   weatherApiBaseUrl:string = '';
   weatherApiCoordUrl:string='';
   limit:number=2;
@@ -27,8 +27,11 @@ export class WeatherService {
       
     }
   getDataByCoordinates(lat:number,lon:number){
+     
       return this.http.get(`${this.weatherApiCoordUrl}?lat=${lat}&lon=${lon}&appid=${this.apiKey}&units=metric`,
                               {responseType: 'json'})
+
+                          
 
       
 

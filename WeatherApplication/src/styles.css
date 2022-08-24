@@ -16,8 +16,8 @@
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
-    width: 100%;
+    font-size: 2vh;
+        width: 100%;
     height: 100vh;
     background-color: #23278D;
     display: flex;
@@ -26,8 +26,8 @@ body {
 }
 
 .container {
-    width: 400px;
-    height: 80vh;
+    width: 100%;
+        height: 80vh;
     background-color: #000c24;
     border-radius: 20px;
     box-shadow: 10px 10px 10px #011140;
@@ -81,7 +81,7 @@ body {
 }
 
 .location {
-    color: white;
+    color: var(--colorFont);
     text-align: center;
     font-size: 1.5em;
 
@@ -129,7 +129,7 @@ body {
 
 .info-block-label span {
     color: white;
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -140,7 +140,7 @@ body {
     align-items: center;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 
@@ -165,14 +165,14 @@ body {
 .search-input {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
-    height: 31px;
+    height: 4.5vh;
     width: 100%;
     border: none;
-    font-size: 1em;
+    font-size: 2.3vh;
     outline-width: 0;
     color: black;
     padding: 5px;
-    padding-left: 10px;
+        padding-left: 1.5vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -180,6 +180,49 @@ body {
 
 .lower-dataTablet {
     position: relative;
+
+
+
+}
+@media only screen and (max-width: 1300px) {
+    body {
+        padding: 5%;
+        position: relative;
+
+
+
+    }
+
+}
+
+/* Weahter Status */
+.status {
+    font-size: 1.4em;
+    color: var(--colorFont);
+
+}
+
+.clock {
+    position: relative;
+    right: -135%;
+    top: 120%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #011140;
+    padding: 5px;
+
+
+
+
+}
+
+.clockInfo {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
 
 
 

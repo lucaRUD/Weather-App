@@ -1,9 +1,9 @@
 .btn-submitLocation {
     background: white url('../assets/271228.png') no-repeat center;
-    background-size: 25px 25px;
+    background-size: 3vh 3vh;
     overflow: hidden;
-    height: 31px;
-    width: 30px;
+    height: 4.5vh;
+        width: 4.5vh;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     cursor: pointer;
@@ -15,8 +15,3 @@
     box-shadow: 10px 10px 10px #011140;
 }
 
-.status {
-    font-size: 1.4em;
-    color: Grey;
-
-}

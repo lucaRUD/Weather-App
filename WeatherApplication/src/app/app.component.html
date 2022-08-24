@@ -1,3 +1,19 @@
+<div class="clock">
+  <ul class="clockInfo">
+ <li>{{hour}}</li>
+ <li>:</li>
+ <li>{{minute}}</li>
+ <li>:</li>
+ <li>{{second}}</li>
+</ul>
+</div>
+
+<app-clock>
+  
+</app-clock>
+
+
+
 <div class="search-container">
   <form onkeypress="return event.keyCode != 13" class="search-bar">
     <input 
@@ -21,8 +37,10 @@
 
 
 <div class="container">
-  <div class="upper-data" [style.--backgroundUpper]="backgroundUpperVar" 
-  [style.colorFont]="">
+  <div class="upper-data" 
+  
+  [style.--backgroundUpper]="backgroundUpperVar" 
+  [style.--colorFont]="tempColorVar">
     <!-- <img  *ngIf=""  src="../assets/sunny.jpg" > -->
     <!-- <img src="../assets/sunny.jpg"> -->
     <div class="weather-data">
