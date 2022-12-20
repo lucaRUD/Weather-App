@@ -11,7 +11,7 @@ import { WeatherData } from '../models/weather.model';
 })
 export class WeatherService {
 
-  apiKey='c23962921705205f624a18420a847ec7';
+  apiKey='8979dabd484b00c39e6b130b3b0f3c1a';
   weatherApiBaseUrl:string = '';
   weatherApiCoordUrl:string='';
   limit:number=2;

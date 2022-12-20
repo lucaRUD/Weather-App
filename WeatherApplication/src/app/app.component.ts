@@ -200,6 +200,42 @@ export class AppComponent implements OnInit {
       this.tempColorVar='#fff';
       console.log(this.backgroundUpperVar);
     }
+
+    if(this.weatherData.weather[0].main == 'Drizzle' && nightOrDay == 0){
+      this.backgroundUpperVar='no-repeat url("./assets/drizzle.jpg")';
+      this.tempColorVar='#000';
+      console.log(this.backgroundUpperVar);
+    }
+
+    if(this.weatherData.weather[0].main == 'Drizzle' && nightOrDay == 1 ){
+      this.backgroundUpperVar='no-repeat url("./assets/drizzle-night.jpg")';
+      this.tempColorVar='#fff';
+      console.log(this.backgroundUpperVar);
+    }
+
+    if(this.weatherData.weather[0].main == 'Mist' && nightOrDay == 0){
+      this.backgroundUpperVar='no-repeat url("./assets/mist.jpg")';
+      this.tempColorVar='#000';
+      console.log(this.backgroundUpperVar);
+    }
+
+    if(this.weatherData.weather[0].main == 'Mist' && nightOrDay == 1 ){
+      this.backgroundUpperVar='no-repeat url("./assets/mist-night.jpg")';
+      this.tempColorVar='#fff';
+      console.log(this.backgroundUpperVar);
+    }
+
+    if(this.weatherData.weather[0].main == 'Fog' && nightOrDay == 0){
+      this.backgroundUpperVar='no-repeat url("./assets/fog.jpg")';
+      this.tempColorVar='#000';
+      console.log(this.backgroundUpperVar);
+    }
+
+    if(this.weatherData.weather[0].main == 'Fog' && nightOrDay == 1 ){
+      this.backgroundUpperVar='no-repeat url("./assets/fog-night.jpg")';
+      this.tempColorVar='#fff';
+      console.log(this.backgroundUpperVar);
+    }
     
   }
 

@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class DataTransportService {
-  private dataSource: BehaviorSubject<string> = new BehaviorSubject<string>('Initial Value');
+private dataSource: BehaviorSubject<string> = new BehaviorSubject<string>('Initial Value');
   data: Observable<string> = this.dataSource.asObservable();
  
   constructor() { }
